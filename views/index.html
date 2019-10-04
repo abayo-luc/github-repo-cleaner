@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>GitHub Cleaner</title>
+  </head>
+  <body>
+    <section class="container">
+      <table class="table">
+        <thead>
+          <th>#</th>
+          <th>Name</th>
+          <th>Created At</th>
+          <th>Forks</th>
+          <th>Forked</th>
+          <th>Permission</th>
+          <th>Language</th>
+          <th class="rep-descr">Description</th>
+          <th>
+            <button class="btn btn-danger" onclick="removeRepos()">
+              Delete
+            </button>
+          </th>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <div class="container" id="loader"></div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
